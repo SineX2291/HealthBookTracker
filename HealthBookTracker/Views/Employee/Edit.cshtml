@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model HealthBookTracker.Models.Employee
+
+@{
+    ViewData["Title"] = "Редактировать сотрудника";
+    Layout = "_Layout";
+}
+
+<h2>Редактировать сотрудника</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ID" />
+
+    <div>
+        <label asp-for="FirstName">Имя</label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="LastName">Фамилия</label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Position">Должность</label>
+        <input asp-for="Position" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="DateOfBirth">Дата рождения</label>
+        <input asp-for="DateOfBirth" type="date" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="MedicalBookEndDate">Дата окончания действия медкнижки</label>
+        <input asp-for="MedicalBookEndDate" type="date" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+   
+    <button type="submit">Сохранить</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

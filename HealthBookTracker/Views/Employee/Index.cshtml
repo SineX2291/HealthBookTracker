@@ -1,0 +1,80 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<HealthBookTracker.Models.Employee>
+@{
+    ViewData["Title"] = "Список сотрудников";
+    Layout = "_Layout";
+}
+
+<h2>Сотрудники</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Должность</th>
+            <th>Дата рождения</th>
+            <th>Дата окончания медкнижки</th>
+            <th>Дней до окончания медкнижки</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var employee in Model)
+        {
+            <tr>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td>@employee.Position</td>
+                <td>@employee.DateOfBirth?.ToShortDateString()</td>
+                <td>@employee.MedicalBookEndDate?.ToShortDateString()</td>
+                <td>@employee.DaysUntilExpiration</td>
+                <td>
+                    @{
+                        var days = employee.DaysUntilExpiration ?? -1;
+                        string cssClass = "";
+                        if (days < 0)
+                        {
+                            cssClass = "text-muted fw-bold"; // если дата не указана
+                        }
+                        else if (days < 10)
+                        {
+                            cssClass = "text-danger fw-bold"; // красный + жирный
+                        }
+                        else if (days < 20)
+                        {
+                            cssClass = "text-warning fw-bold"; // жёлтый
+                        }
+                        else
+                        {
+                            cssClass = "text-success fw-bold"; // зелёный
+                        }
+                    }
+
+                    <span class="@cssClass">
+                        @(employee.DaysUntilExpiration != null ? $"{employee.DaysUntilExpiration} дней" : "неизвестно")
+                    </span>
+                </td>
+                <td>
+                    <a class="btn btn-primary" href="@Url.Action("Edit", "Employee", new { id = employee.ID })">Редактировать</a>
+                    <form asp-action="Delete"
+                          asp-controller="Employee"
+                          asp-route-id="@employee.ID"
+                          method="post"
+                          onsubmit="return confirm('Вы уверены, что хотите удалить сотрудника?')"
+                          style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Удалить</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="text-center">
+    <p>
+        <a class="btn btn-primary" href="http://localhost:5100/Employee/Create">
+            Добавить нового сотрудника
+        </a>
+    </p>
+</div>
