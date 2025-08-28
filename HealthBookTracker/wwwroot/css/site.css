@@ -1,4 +1,4 @@
-html {
+﻿html {
   font-size: 14px;
 }
 
@@ -20,3 +20,138 @@ html {
 body {
   margin-bottom: 60px;
 }
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a {
+    color: #0077cc;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+/* Эффект при наведении на кнопку "Редактировать" */
+.btn-primary:hover {
+    background-color: #0056b3; /* чуть темнее */
+    border-color: #004085;
+    transform: scale(1.05); /* лёгкое увеличение */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Эффект при наведении на кнопку "Удалить" */
+.btn-danger:hover {
+    background-color: #b02a37; /* более тёмно-красный */
+    border-color: #8a1c26;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Эффект при наведении на кнопку "Добавить сотрудника" */
+.btn-success:hover {
+    background-color: #157347;
+    border-color: #0a3622;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+/* 🔹 Фон */
+.home-background {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+/* 🔹 Современные кнопки */
+.btn-modern {
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: inline-block;
+}
+
+.btn-modern-blue {
+    background: #007bff;
+    color: white;
+}
+
+    .btn-modern-blue:hover {
+        background: #0056b3;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+
+.btn-modern-green {
+    background: #28a745;
+    color: white;
+}
+
+    .btn-modern-green:hover {
+        background: #1e7e34;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+/* 🔹 Плавные переходы для всех элементов */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Для ссылок и кнопок — отдельно */
+a, button {
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+    /* 🔹 Ховер-эффекты для ссылок */
+    a:hover {
+        opacity: 0.85;
+    }
+
+/* 🔹 Для карточек */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }

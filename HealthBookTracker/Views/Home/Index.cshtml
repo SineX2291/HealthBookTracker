@@ -2,18 +2,40 @@
     ViewData["Title"] = "Home Page";
 }
 
+<div class="home-background d-flex align-items-center justify-content-center min-vh-100">
+    <div class="card shadow-lg border-0 rounded-4" style="max-width: 800px; background: rgba(255,255,255,0.9);">
+        <div class="card-body text-center p-5">
+            <h1 class="display-4 mb-3 text-primary fw-bold">Добро пожаловать в HealthBookTracker</h1>
+            <p class="lead text-muted mb-4">
+                Удобный сервис для отслеживания сотрудников и их медицинских книжек.
+            </p>
 
-<div class="text-center">
-    <h1 class="display-4">Добро пожаловать в HealthBookTracker</h1>
-    <p>Это приложение для отслеживания сотрудников и их медицинских книжек.</p>
-    <p>Вы можете просмотреть список сотрудников, 
-        добавить нового сотрудника и управлять их данными.</p>
-    <p>Для начала работы перейдите к списку сотрудников.</p>
-    <p><a class="btn btn-primary" href="http://localhost:5100/Employee">Перейти к сотрудникам</a></p>
-</div>
-<div class="text-center">
-    <p><a class="btn btn-primary" href="http://localhost:5100/Employee/Create">
-        Добавить нового сотрудника</a></p>
-</div>
-    
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="p-3">
+                        ✔ Просмотр сотрудников
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        ✔ Добавление новых сотрудников
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        ✔ Напоминания о сроках
+                    </div>
+                </div>
+            </div>
 
+            <div class="d-flex justify-content-center gap-4">
+                <a class="btn-modern btn-modern-blue" href="http://localhost:5100/Employees">
+                    📋 Перейти к сотрудникам
+                </a>
+                <a class="btn-modern btn-modern-green" href="http://localhost:5100/Employees/Create">
+                    ➕ Добавить сотрудника
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

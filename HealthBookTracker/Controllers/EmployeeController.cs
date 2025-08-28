@@ -1,75 +1,110 @@
-﻿using HealthBookTracker.Models.Data;
+﻿using System.Threading.Tasks;
 using HealthBookTracker.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using HealthBookTracker.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HealthBookTracker.Controllers
 {
-    public class EmployeeController : Controller
+    [Authorize]
+    public class EmployeesController : Controller
     {
 
-        private readonly ApplicationDbContext _context;
+        private readonly IEmployeeService _employeeService;
 
-        public EmployeeController(ApplicationDbContext context)
+        public EmployeesController(IEmployeeService employeeService)
         {
-            _context = context;
+            _employeeService = employeeService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var employees = _context.Employees.ToList();
+            var employees = await _employeeService.GetAllAsync();
             return View(employees);
         }
-        [HttpGet]
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var employee = await _employeeService.GetByIdAsync(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            return View(employee);
+        }
+
         public IActionResult Create()
         {
             return View();
         }
-        [HttpPost]  
+
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Employee employee)
+        public async Task<IActionResult> Create(Employee employee)
         {
             if (ModelState.IsValid)
             {
-                _context.Employees.Add(employee);
-                _context.SaveChanges();
+                await _employeeService.CreateAsync(employee);
                 return RedirectToAction(nameof(Index));
             }
             return View(employee);
         }
-        [HttpPost]  
-        [ValidateAntiForgeryToken]
-        public IActionResult Delete(int id)
-        {
-            var employee = _context.Employees.FirstOrDefault(e => e.ID == id);
-            if (employee == null)           
-                return NotFound();
-            
-            _context.Employees.Remove(employee);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
-        }
-        [HttpGet]
-        public IActionResult Edit(int id)
-        {
-            var employee = _context.Employees.FirstOrDefault(e => e.ID == id);
-            if (employee == null)
-                return NotFound();
 
+        public async Task<IActionResult> Edit(int id)
+        {
+            var employee = await _employeeService.GetByIdAsync(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
             return View(employee);
         }
+
         [HttpPost]
-        public IActionResult Edit(Employee employee)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Employee employee)
         {
-            if(!ModelState.IsValid)
-                return View(employee);
-
-            _context.Employees.Update(employee);
-            _context.SaveChanges();
-
-            return RedirectToAction(nameof(Index));
-            
+            if (id != employee.Id)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    await _employeeService.UpdateAsync(employee);
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (await _employeeService.GetByIdAsync(id) == null)
+                    {
+                        return NotFound();
+                    }
+                    throw;
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(employee);
         }
 
+        public async Task<IActionResult> Delete(int id)
+        {
+            var employee = await _employeeService.GetByIdAsync(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            return View(employee);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            await _employeeService.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+
+
+        }
     }
-   
 }

@@ -5,8 +5,7 @@ namespace HealthBookTracker.Models
 {
     public class Employee
     {
-        public int ID { get; set; }
-
+        public int Id { get; set; }        
         [Required(ErrorMessage = "Имя обязательно")]
         public string FirstName { get; set; } = string.Empty;
 

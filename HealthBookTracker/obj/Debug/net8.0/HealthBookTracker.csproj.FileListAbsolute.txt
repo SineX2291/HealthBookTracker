@@ -145,9 +145,7 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
-C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\scopedcss\bundle\HealthBookTracker.styles.css
-C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\scopedcss\projectbundle\HealthBookTracker.bundle.scp.css
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\staticwebassets.development.json
@@ -159,3 +157,4 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\HealthBookTracker.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\HealthBookTracker.genruntimeconfig.cache
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\ref\HealthBookTracker.dll
+C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker\obj\Debug\net8.0\HealthBookTracker.sourcelink.json

@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model HealthBookTracker.Models.Employee
+
+@{
+    ViewData["Title"] = "Редактировать сотрудника";
+    Layout = "_Layout";
+}
+
+<h2 class="mb-4">Редактировать сотрудника</h2>
+
+<form asp-action="Create" method="post" class="card p-4 shadow-sm">
+    <div class="mb-3">
+        <label asp-for="FirstName" class="form-label">Имя <span class="text-danger">*</span></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="LastName" class="form-label">Фамилия <span class="text-danger">*</span></label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Position" class="form-label">Должность</label>
+        <input asp-for="Position" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DateOfBirth" class="form-label">Дата рождения</label>
+        <input asp-for="DateOfBirth" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MedicalBookEndDate" class="form-label">Дата окончания действия медкнижки</label>
+        <input asp-for="MedicalBookEndDate" type="date" class="form-control" />
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+        <a class="btn btn-outline-secondary px-4 py-2 rounded-pill shadow-sm"
+           href="@Url.Action("Index", "Employees")">
+            ⬅ Назад к списку
+        </a>
+
+        <button type="submit" class="btn btn-success px-4 py-2 rounded-pill shadow-sm">
+            💾 Сохранить
+        </button>
+    </div>
+</form>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
