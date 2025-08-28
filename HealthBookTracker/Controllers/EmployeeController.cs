@@ -1,22 +1,21 @@
-﻿using System.Threading.Tasks;
-using HealthBookTracker.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using HealthBookTracker.Models;
 using HealthBookTracker.Services;
-using Microsoft.AspNetCore.Authorization;
+using HealthBookTracker.Filters;
 
 namespace HealthBookTracker.Controllers
 {
-    [Authorize]
+    [SessionAuthorize]  
     public class EmployeesController : Controller
     {
-
         private readonly IEmployeeService _employeeService;
 
         public EmployeesController(IEmployeeService employeeService)
         {
             _employeeService = employeeService;
         }
+
         public async Task<IActionResult> Index()
         {
             var employees = await _employeeService.GetAllAsync();
@@ -103,8 +102,6 @@ namespace HealthBookTracker.Controllers
         {
             await _employeeService.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
-
-
         }
     }
 }

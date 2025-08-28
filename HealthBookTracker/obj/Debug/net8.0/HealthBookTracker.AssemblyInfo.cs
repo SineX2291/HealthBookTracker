@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthBookTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27619b13d67c5af836e69e43c40afd96ffc92d26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e19ecbf1e57509bd69d30528e56c2b5f4c822bdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthBookTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthBookTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

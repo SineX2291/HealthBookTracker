@@ -5,11 +5,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HealthBookTracker.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext<IdentityUser>(options)
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options) { }
-        
         public DbSet<Employee> Employees { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -17,10 +14,9 @@ namespace HealthBookTracker.Data
             modelBuilder.Entity<Employee>().ToTable("Employee");
             base.OnModelCreating(modelBuilder);
         }
-
-        internal Task SaveChangesAsync()
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return base.SaveChangesAsync(cancellationToken);
         }
     }
 }
