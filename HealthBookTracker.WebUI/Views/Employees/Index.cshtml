@@ -1,0 +1,66 @@
+﻿﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<HealthBookTracker.Domain.Entities.Employee>
+@{
+    ViewData["Title"] = "Список сотрудников";
+    Layout = "_Layout";
+}
+
+<h2 class="mb-4">Сотрудники</h2>
+
+<div class="card p-3 shadow-sm">
+    <table class="table table-hover align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th class="text-start">Имя</th>
+                <th class="text-start">Фамилия</th>
+                <th>Должность</th>
+                <th>Дата рождения</th>
+                <th>Дата окончания медкнижки</th>
+                <th>Дней до окончания медкнижки</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                var rowClass = employee.MedicalBookEndDate == null ? "table-secondary" :
+                employee.DaysUntilExpiration < 10 ? "table-danger" :
+                employee.DaysUntilExpiration < 20 ? "table-warning" :
+                "table-success";
+
+                <tr class="@rowClass">
+                    <td class="text-start p-2">@employee.FirstName</td>
+                    <td class="text-start p-2">@employee.LastName</td>
+                    <td class="p-2">@employee.Position</td>
+                    <td>@(employee.DateOfBirth.HasValue? employee.DateOfBirth.Value.ToShortDateString() : "—")</td>
+                    <td>@(employee.MedicalBookEndDate.HasValue? employee.MedicalBookEndDate.Value.ToShortDateString() : "—")</td>
+                    <td class="p-2 fw-bold text-center">
+                        @(employee.DaysUntilExpiration != null ? $"{employee.DaysUntilExpiration} дней" : "—")
+                    <td class="p-2 text-center">
+                        <a class="btn btn-sm btn-outline-primary rounded-circle me-1"
+                           href="@Url.Action("Edit", "Employees", new { id = employee.Id })"
+                           title="Редактировать">
+                            ✏
+                        </a>
+                        <form asp-action="Delete" asp-controller="Employees" asp-route-id="@employee.Id"
+                              method="post" onsubmit="return confirm('Вы уверены, что хотите удалить сотрудника?')"
+                              style="display:inline;">
+                            <button type="submit" class="btn btn-sm btn-outline-danger rounded-circle" title="Удалить">
+                                🗑
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="text-center mt-3">
+        <a class="btn btn-outline-success btn-lg rounded-circle shadow-sm"
+           href="@Url.Action("Create", "Employees")" title="Добавить нового сотрудника">
+            ➕
+        </a>
+    </div>
+</div>

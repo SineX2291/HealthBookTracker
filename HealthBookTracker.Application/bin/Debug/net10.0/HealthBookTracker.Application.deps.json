@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "HealthBookTracker.Application/1.0.0": {
+        "dependencies": {
+          "HealthBookTracker.Domain": "1.0.0"
+        },
+        "runtime": {
+          "HealthBookTracker.Application.dll": {}
+        }
+      },
+      "HealthBookTracker.Domain/1.0.0": {
+        "runtime": {
+          "HealthBookTracker.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HealthBookTracker.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HealthBookTracker.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

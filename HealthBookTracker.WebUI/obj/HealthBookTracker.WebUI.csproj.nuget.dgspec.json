@@ -1,0 +1,309 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.WebUI\\HealthBookTracker.WebUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Application\\HealthBookTracker.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Application\\HealthBookTracker.Application.csproj",
+        "projectName": "HealthBookTracker.Application",
+        "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Application\\HealthBookTracker.Application.csproj",
+        "packagesPath": "C:\\Users\\Vasil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vasil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Domain\\HealthBookTracker.Domain.csproj": {
+                "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Domain\\HealthBookTracker.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Domain\\HealthBookTracker.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Domain\\HealthBookTracker.Domain.csproj",
+        "projectName": "HealthBookTracker.Domain",
+        "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Domain\\HealthBookTracker.Domain.csproj",
+        "packagesPath": "C:\\Users\\Vasil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vasil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Infrastructure\\HealthBookTracker.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Infrastructure\\HealthBookTracker.Infrastructure.csproj",
+        "projectName": "HealthBookTracker.Infrastructure",
+        "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Infrastructure\\HealthBookTracker.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Vasil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vasil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Application\\HealthBookTracker.Application.csproj": {
+                "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Application\\HealthBookTracker.Application.csproj"
+              },
+              "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Domain\\HealthBookTracker.Domain.csproj": {
+                "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Domain\\HealthBookTracker.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.WebUI\\HealthBookTracker.WebUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.WebUI\\HealthBookTracker.WebUI.csproj",
+        "projectName": "HealthBookTracker.WebUI",
+        "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.WebUI\\HealthBookTracker.WebUI.csproj",
+        "packagesPath": "C:\\Users\\Vasil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.WebUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vasil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Application\\HealthBookTracker.Application.csproj": {
+                "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Application\\HealthBookTracker.Application.csproj"
+              },
+              "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Infrastructure\\HealthBookTracker.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Vasil\\source\\repos\\HealthBookTracker\\HealthBookTracker.Infrastructure\\HealthBookTracker.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
