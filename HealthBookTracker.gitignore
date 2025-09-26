@@ -25,7 +25,7 @@ appsettings.Local.json
 packages/
 .nuget/
 
-# Node.js (если будут фронтенд-пакеты)
+# Node.js 
 node_modules/
 
 # Others
