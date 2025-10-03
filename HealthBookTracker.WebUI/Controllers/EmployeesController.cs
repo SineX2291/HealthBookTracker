@@ -11,11 +11,23 @@ namespace HealthBookTracker.WebUI.Controllers
         {
             private readonly IEmployeeService _employeeService = employeeService;
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder)
+        {
+            var currentSort = string.IsNullOrEmpty(sortOrder) ? "DaysAsc" : sortOrder;
+            ViewData["CurrentSort"] = currentSort;
+            ViewData["DaysSortParam"] = currentSort == "DaysAsc" ? "DaysDesc" : "DaysAsc";
+
+            var employees = await _employeeService.GetAllAsync(search: null, sortOrder: null);
+
+            employees = sortOrder switch
             {
-                var employees = await _employeeService.GetAllAsync();
-                return View(employees);
-            }
+                "DaysAsc" => employees.OrderBy(e => e.DaysUntilExpiration ?? int.MaxValue),
+                "DaysDesc" => employees.OrderByDescending(e => e.DaysUntilExpiration ?? int.MinValue),
+                _ => employees.OrderBy(e => e.DaysUntilExpiration ?? int.MaxValue),
+            };
+
+            return View(employees.ToList());
+        }
 
             public async Task<IActionResult> Details(int id)
             {

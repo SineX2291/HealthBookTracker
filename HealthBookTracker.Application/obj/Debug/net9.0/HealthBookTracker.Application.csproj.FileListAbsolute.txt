@@ -13,3 +13,4 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\refint\HealthBookTracker.Application.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\ref\HealthBookTracker.Application.dll
+C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.sourcelink.json

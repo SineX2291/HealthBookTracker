@@ -9,3 +9,4 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net9.0\refint\HealthBookTracker.Domain.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net9.0\HealthBookTracker.Domain.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net9.0\ref\HealthBookTracker.Domain.dll
+C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net9.0\HealthBookTracker.Domain.sourcelink.json

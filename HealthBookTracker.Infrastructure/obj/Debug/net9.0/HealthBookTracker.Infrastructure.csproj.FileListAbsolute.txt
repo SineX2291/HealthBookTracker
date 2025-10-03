@@ -17,3 +17,4 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\o
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.genruntimeconfig.cache
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\ref\HealthBookTracker.Infrastructure.dll
+C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.sourcelink.json

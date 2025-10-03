@@ -219,6 +219,7 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.WebUI\bin\Debug\
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.WebUI\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.WebUI\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.WebUI\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.WebUI\obj\Debug\net9.0\HealthBookTracker.WebUI.sourcelink.json
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.WebUI\obj\Debug\net9.0\rpswa.dswa.cache.json
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.WebUI\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.WebUI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json

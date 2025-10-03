@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using HealthBookTracker.Domain.Validation;  
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -22,6 +23,7 @@ namespace HealthBookTracker.Domain.Entities
         public string? Position { get; set; } = string.Empty;
 
         [DataType(DataType.Date)]
+        [AgeValidation(18, ErrorMessage = "Сотрудник должен быть старше 18 лет.")]
         public DateTime? DateOfBirth { get; set; }
 
         [DataType(DataType.Date)]

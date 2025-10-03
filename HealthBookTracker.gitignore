@@ -19,6 +19,7 @@ appsettings.Local.json
 *.log
 *.pdb
 *.cache
+healthbooktracker.db
 
 # NuGet
 *.nupkg
