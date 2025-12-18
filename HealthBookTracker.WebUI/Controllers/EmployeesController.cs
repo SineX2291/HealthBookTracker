@@ -1,23 +1,32 @@
 ﻿using HealthBookTracker.Application.Interfaces;
 using HealthBookTracker.Domain.Entities;
-using HealthBookTracker.WebUI.Filters;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HealthBookTracker.WebUI.Controllers
 {
-        [SessionAuthorize]
-        public class EmployeesController(IEmployeeService employeeService) : Controller
-        {
-            private readonly IEmployeeService _employeeService = employeeService;
+       [Authorize]
+    public class EmployeesController : Controller
+    {
+        private readonly IEmployeeService _employeeService;
+        private readonly UserManager<HealthBookTracker.Domain.Entities.ApplicationUser> _userManager;
 
-        public async Task<IActionResult> Index(string sortOrder)
+        public EmployeesController(IEmployeeService employeeService, UserManager<HealthBookTracker.Domain.Entities.ApplicationUser> userManager)
+        {
+            _employeeService = employeeService;
+            _userManager = userManager;
+        }
+
+        public async Task<IActionResult> Index(string? search, string? sortOrder)
         {
             var currentSort = string.IsNullOrEmpty(sortOrder) ? "DaysAsc" : sortOrder;
             ViewData["CurrentSort"] = currentSort;
             ViewData["DaysSortParam"] = currentSort == "DaysAsc" ? "DaysDesc" : "DaysAsc";
 
-            var employees = await _employeeService.GetAllAsync(search: null, sortOrder: null);
+            var userId = _userManager.GetUserId(User);
+            var employees = await _employeeService.GetAllAsync(userId, search, sortOrder);
 
             employees = sortOrder switch
             {
@@ -29,7 +38,7 @@ namespace HealthBookTracker.WebUI.Controllers
             return View(employees.ToList());
         }
 
-            public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int id)
             {
                 var employee = await _employeeService.GetByIdAsync(id);
                 if (employee == null)
@@ -48,10 +57,12 @@ namespace HealthBookTracker.WebUI.Controllers
             public async Task<IActionResult> Create(Employee employee)
             {
                 if (ModelState.IsValid)
-                {
+                    {
+                    employee.UserId = _userManager.GetUserId(User);
                     await _employeeService.CreateAsync(employee);
                     return RedirectToAction(nameof(Index));
-                }
+                    }
+
                 return View(employee);
             }
             [HttpGet]

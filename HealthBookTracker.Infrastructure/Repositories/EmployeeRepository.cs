@@ -9,7 +9,12 @@ namespace HealthBookTracker.Infrastructure.Repositories
     {
         private readonly ApplicationDbContext _db = db;
 
-        public async Task<IEnumerable<Employee>> GetAllAsync() => await _db.Employees.ToListAsync();
+        public async Task<IEnumerable<Employee>> GetAllByUserAsync(string? userId)
+        {
+            return await _db.Employees
+                .Where(e => e.UserId == userId)
+                .ToListAsync();
+        }
         public async Task<Employee?> GetByIdAsync(int id) => await _db.Employees.FindAsync(id);
         public async Task CreateAsync(Employee employee)
         {

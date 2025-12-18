@@ -8,9 +8,9 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.AssemblyInfoInputs.cache
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.AssemblyInfo.cs
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.csproj.CoreCompileInputs.cache
+C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.sourcelink.json
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBo.F23E7325.Up2Date
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\refint\HealthBookTracker.Application.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\ref\HealthBookTracker.Application.dll
-C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net9.0\HealthBookTracker.Application.sourcelink.json

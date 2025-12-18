@@ -1,14 +1,13 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using HealthBookTracker.Domain.Validation;  
-using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using HealthBookTracker.Domain.Validation;
+
 
 namespace HealthBookTracker.Domain.Entities
 {
+ 
     public class Employee
     {
+   
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Имя обязательно")] 
@@ -28,6 +27,9 @@ namespace HealthBookTracker.Domain.Entities
 
         [DataType(DataType.Date)]
         public DateTime? MedicalBookEndDate { get; set; }
+
+        public string? UserId { get; set; }
+        public ApplicationUser? User { get; set; }
 
         public int? DaysUntilExpiration
         {
