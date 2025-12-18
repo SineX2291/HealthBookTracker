@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using HealthBookTracker.Application.Interfaces;
+﻿using HealthBookTracker.Application.Interfaces;
 using HealthBookTracker.Domain.Entities;
 using HealthBookTracker.Domain.Interfaces;
 
@@ -10,9 +8,9 @@ namespace HealthBookTracker.Application.Services
     {
         private readonly IEmployeeRepository _repo = repo;
 
-        public async Task<IEnumerable<Employee>> GetAllAsync(string? search, string? sortOrder)
+        public async Task<IEnumerable<Employee>> GetAllAsync(string? userId, string? search, string? sortOrder)
         {
-            var employees = await _repo.GetAllAsync();
+            var employees = await _repo.GetAllByUserAsync(userId);
 
             // 🔎 Фильтрация
             if (!string.IsNullOrEmpty(search))

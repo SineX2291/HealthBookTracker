@@ -6,7 +6,7 @@ namespace HealthBookTracker.Domain.Interfaces
 {
     public interface IEmployeeRepository
     {
-        Task<IEnumerable<Employee>> GetAllAsync();
+        Task<IEnumerable<Employee>> GetAllByUserAsync(string? userId);
         Task<Employee?> GetByIdAsync(int id);
         Task CreateAsync(Employee employee);
         Task UpdateAsync(Employee employee);

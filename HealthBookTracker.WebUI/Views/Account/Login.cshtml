@@ -1,18 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Вход";
-}
+﻿@model HealthBookTracker.WebUI.Models.ViewModels.LoginViewModel
 
 <h2>Вход</h2>
 
-<form method="post">
-    <div class="mb-3">
-        <label>Пароль</label>
-        <input type="password" name="password" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary">Войти</button>
-</form>
+<form asp-action="Login" method="post">
+    <label>Email</label>
+    <input asp-for="Email" class="form-control" />
 
-@if (ViewBag.Error != null)
-{
-    <div class="text-danger mt-2">@ViewBag.Error</div>
+    <label>Пароль</label>
+    <input asp-for="Password" class="form-control" type="password" />
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <button type="submit" class="btn btn-primary mt-3">Войти</button>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }

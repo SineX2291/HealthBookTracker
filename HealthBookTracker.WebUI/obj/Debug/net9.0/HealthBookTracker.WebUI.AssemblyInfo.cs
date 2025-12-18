@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthBookTracker.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3951334993df8b194e889ba1fe24c4eb18ee78f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd2f805d44ac378d6bc5eba8d0360b8e715d305a")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthBookTracker.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthBookTracker.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

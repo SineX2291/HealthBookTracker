@@ -1,0 +1,27 @@
+﻿@model HealthBookTracker.WebUI.Models.ViewModels.RegisterViewModel
+
+<h2>Регистрация</h2>
+
+<form asp-action="Register" method="post">
+
+    <!-- Вывод всех ошибок валидации -->
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Пароль</label>
+        <input asp-for="Password" class="form-control" type="password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Зарегистрироваться</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -11,10 +11,10 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\o
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.AssemblyInfo.cs
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.sourcelink.json
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBo.86671259.Up2Date
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\refint\HealthBookTracker.Infrastructure.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.genruntimeconfig.cache
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\ref\HealthBookTracker.Infrastructure.dll
-C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net9.0\HealthBookTracker.Infrastructure.sourcelink.json
