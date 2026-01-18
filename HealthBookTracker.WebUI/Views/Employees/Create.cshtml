@@ -15,6 +15,10 @@
 <h2 class="mb-4">Добавить сотрудника</h2>
 
 <form asp-action="Create" method="post" class="card p-4 shadow-sm">
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="UserId" />
+
     <div class="mb-3">
         <label asp-for="FirstName" class="form-label">Имя <span class="text-danger">*</span></label>
         <input asp-for="FirstName" class="form-control" />

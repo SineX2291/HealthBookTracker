@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using HealthBookTracker.Domain.Entities;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // DbContext (sqlite)
@@ -30,7 +31,8 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
     options.Password.RequiredLength = 3;
 })
 .AddRoles<IdentityRole>()
-.AddEntityFrameworkStores<ApplicationDbContext>();
+.AddEntityFrameworkStores<ApplicationDbContext>()
+.AddDefaultTokenProviders();
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -42,6 +44,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 // DI: репозиторий и сервис
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IEmailSender, FakeEmailSender>();
 
 // MVC
 builder.Services.AddControllersWithViews();
@@ -82,3 +85,5 @@ app.UseStatusCodePagesWithReExecute("/Home/StatusCode", "?code={0}");
 app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+public partial class Program { }

@@ -15,3 +15,24 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\o
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\refint\HealthBookTracker.Infrastructure.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\ref\HealthBookTracker.Infrastructure.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\CoverletSourceRootsMapping_HealthBookTracker.Infrastructure
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\HealthBookTracker.Infrastructure.deps.json
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\HealthBookTracker.Infrastructure.runtimeconfig.json
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\HealthBookTracker.Infrastructure.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\HealthBookTracker.Infrastructure.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\HealthBookTracker.Application.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\HealthBookTracker.Domain.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\HealthBookTracker.Application.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\bin\Debug\net10.0\HealthBookTracker.Domain.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.csproj.AssemblyReference.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.AssemblyInfoInputs.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.AssemblyInfo.cs
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.sourcelink.json
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBo.86671259.Up2Date
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\refint\HealthBookTracker.Infrastructure.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\HealthBookTracker.Infrastructure.genruntimeconfig.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Infrastructure\obj\Debug\net10.0\ref\HealthBookTracker.Infrastructure.dll

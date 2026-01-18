@@ -1,36 +1,99 @@
 ﻿﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HealthBookTracker</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/HealthBookTracker.styles.css" asp-append-version="true" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar border-bottom shadow-sm bg-body">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HealthBookTracker</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Логотип -->
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2"
+                   asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-heart-pulse-fill text-danger fs-4"></i>
+                    HealthBookTracker
+                </a>
+
+                <!-- Кнопка для мобилок -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                <!-- Навигация -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item small text-body-secondary">
+                            <a class="nav-link"
+                               asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house"></i> Главная
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item small text-body-secondary">
+                                <a class="nav-link"
+                                   asp-controller="Employees" asp-action="Index">
+                                    <i class="bi bi-people"></i> Сотрудники
+                                </a>
+                            </li>
+                        }
                     </ul>
-                    <ul class="navbar-nav">
-                        @await Html.PartialAsync("_LoginPartial")
+
+                    <!-- Правая часть -->
+                    <div class="nav-item">
+                        <button id="themeToggle"
+                                class="btn btn-outline-secondary btn-sm"
+                                type="button"
+                                title="Переключить тему">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </div>
+                    <ul class="navbar-nav align-items-center gap-2">
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item small text-body-secondary">
+                                <i class="bi bi-person-circle"></i>
+                                @User.Identity.Name
+                            </li>
+
+                            <li class="nav-item small text-body-secondary">
+                                <form asp-controller="Account" asp-action="Logout" method="post">
+                                    <button class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-box-arrow-right"></i> Выйти
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item small text-body-secondary">
+                                <a class="btn btn-outline-primary btn-sm"
+                                   asp-controller="Account" asp-action="Login">
+                                    Войти
+                                </a>
+                            </li>
+
+                            <li class="nav-item small text-body-secondary">
+                                <a class="btn btn-primary btn-sm"
+                                   asp-controller="Account" asp-action="Register">
+                                    Регистрация
+                                </a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
@@ -47,10 +110,35 @@
             &copy; 2025 - HealthBookTracker - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
 
+        // Загружаем тему
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.setAttribute('data-bs-theme', savedTheme);
+            updateIcon(savedTheme);
+        }
+
+        themeToggle?.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            html.setAttribute('data-bs-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            icon.className = theme === 'dark'
+                ? 'bi bi-sun-fill'
+                : 'bi bi-moon-fill';
+        }
+    </script>
 </body>
 </html>
