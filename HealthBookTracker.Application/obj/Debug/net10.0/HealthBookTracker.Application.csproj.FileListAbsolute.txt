@@ -13,3 +13,20 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\refint\HealthBookTracker.Application.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\ref\HealthBookTracker.Application.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\bin\Debug\net10.0\CoverletSourceRootsMapping_HealthBookTracker.Application
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\bin\Debug\net10.0\HealthBookTracker.Application.deps.json
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\bin\Debug\net10.0\HealthBookTracker.Application.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\bin\Debug\net10.0\HealthBookTracker.Application.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\bin\Debug\net10.0\HealthBookTracker.Domain.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\bin\Debug\net10.0\HealthBookTracker.Domain.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.csproj.AssemblyReference.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.AssemblyInfoInputs.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.AssemblyInfo.cs
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.csproj.CoreCompileInputs.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.sourcelink.json
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBo.F23E7325.Up2Date
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\refint\HealthBookTracker.Application.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\HealthBookTracker.Application.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Application\obj\Debug\net10.0\ref\HealthBookTracker.Application.dll

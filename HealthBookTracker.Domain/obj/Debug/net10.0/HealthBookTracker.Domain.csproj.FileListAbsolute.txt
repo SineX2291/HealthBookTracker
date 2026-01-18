@@ -9,3 +9,16 @@ C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\refint\HealthBookTracker.Domain.dll
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.pdb
 C:\Users\Vasil\source\repos\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\ref\HealthBookTracker.Domain.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\bin\Debug\net10.0\HealthBookTracker.Domain.deps.json
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\bin\Debug\net10.0\HealthBookTracker.Domain.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\bin\Debug\net10.0\HealthBookTracker.Domain.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.csproj.AssemblyReference.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.AssemblyInfoInputs.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.AssemblyInfo.cs
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.csproj.CoreCompileInputs.cache
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.sourcelink.json
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\refint\HealthBookTracker.Domain.dll
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\HealthBookTracker.Domain.pdb
+E:\Рабочий стол\HealthBookTracker\HealthBookTracker.Domain\obj\Debug\net10.0\ref\HealthBookTracker.Domain.dll
